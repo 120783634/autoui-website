@@ -760,7 +760,7 @@
           <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M10.5 2L2 12l8.5 10 8.5-10L10.5 2z"/></svg>
           Unity
         </a>
-        <a href="https://www.cocos.com/creator" class="download-btn" target="_blank">
+        <a href="javascript:void(0)" class="download-btn" onclick="showComingSoon()">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
           Cocos Creator
         </a>
@@ -790,7 +790,12 @@
       const panel = document.getElementById('wechatPanel');
       panel.classList.toggle('show');
     }
-    
+
+    // 显示"敬请期待"弹窗
+    function showComingSoon() {
+      alert('Cocos Creator 版本正在开发中，敬请期待！');
+    }
+
     // 点击外部关闭微信面板
     document.addEventListener('click', function(e) {
       const panel = document.getElementById('wechatPanel');
